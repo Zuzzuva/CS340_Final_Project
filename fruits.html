@@ -1,0 +1,91 @@
+<!--
+- Author: Kaden FLick
+- Date: 02/01/2021
+- Description: Rudimentary fruits page. Displays fruit information for the user.
+-->
+
+<!DOCTYPE html>
+
+<html land="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Flavor Funtown</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="site-title">Fruits</h1>
+
+      <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="fruits.html">Fruits</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+
+      <div class="warning">
+        <p>Please note that this site is a work in progress. This HTML is preliminary and all data presented is hardcoded.</p>
+      </div>
+    </header>
+
+    <div class="fruit-search-container">
+      <form class="fruit-search-form">
+        <label for="fruit-name-search">Fruit Name</label>
+        <input type="text" name="fruit-name-search" placeholder="Apple">
+
+        <fieldset>
+          <legend>Vitamins</legend>
+
+          <input type="checkbox" name="vitamin" value="vitamin-c">
+          <label for="vitamin-c">Vitamin-C</label>
+          <input type="checkbox" name="vitamin" value="thaimine">
+          <label for="thaimine">Thaimine</label>
+          <input type="checkbox" name="vitamin" value="potassium">
+          <label for="potassium">Potassium</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tastes</legend>
+
+          <input type="checkbox" name="taste" value="sweet">
+          <label for="sweet">Sweet</label>
+          <input type="checkbox" name="taste" value="crisp">
+          <label for="crisp">Crisp</label>
+          <input type="checkbox" name="taste" value="juicy">
+          <label for="juicy">Juicy</label>
+        </fieldset>
+
+        <input type="submit" value="Search">
+        <input type="reset">
+      </form>
+    </div>
+
+    <div class="fruit-card-container">
+      <div class="fruit-card">
+        <h2>Apple</h2>
+        <p>Taste: Sweet, Crisp</p>
+        <p>Vitamins: Vitamin C, Potassium</p>
+        <p>Price: $1.00</p>
+
+        <form class="cart-form">
+          <label for="quantity-step">Quantity</label>
+          <input type="number" name="quantity-step" value="1" step="1" min="1">
+          <input type="submit" value="Add To Cart">
+        </form>
+      </div>
+
+      <div class="fruit-card">
+        <h2>Orange</h2>
+        <p>Taste: Sweet, Juicy</p>
+        <p>Vitamins: Vitamin C, Thaimine</p>
+        <p>Price: $1.50</p>
+
+        <form class="cart-form">
+          <label for="quantity-step">Quantity</label>
+          <input type="number" name="quantity-step" value="1" step="1" min="1">
+          <input type="submit" value="Add To Cart">
+        </form>
+      </div>
+    </div>
+  </body>
+
+</html>

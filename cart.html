@@ -1,0 +1,54 @@
+<!--
+- Author: Kaden FLick
+- Date: 02/01/2021
+- Description: Rudimentary cart page. Displays current cart information for the user.
+-->
+
+<!DOCTYPE html>
+
+<html land="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Flavor Funtown</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="site-title">Cart</h1>
+
+      <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="fruits.html">Fruits</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+
+      <div class="warning">
+        <p>Please note that this site is a work in progress. This HTML is preliminary and all data presented is hardcoded.</p>
+      </div>
+    </header>
+
+    <div class="cart-fruit-contianer">
+      <div class="cart-fruit-card">
+        <h3>Apple</h3>
+        <p>Quantity: 3</p>
+        <p>Price: $1.00</p>
+
+        <button type="button" name="remove-button">Remove</button>
+      </div>
+
+      <div class="cart-fruit-card">
+        <h3>Orange</h3>
+        <p>Quantity: 5</p>
+        <p>Price: $1.50</p>
+
+        <button type="button" name="remove-button">Remove</button>
+      </div>
+    </div>
+
+    <div class="total">
+      <h3>Total: $10.50</h3>
+      <button type="button" name="checkout-button"><a href="order.html">Proceed to Checkout ></a></button>
+    </div>
+  </body>
+
+</html>
