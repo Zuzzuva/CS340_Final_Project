@@ -1,0 +1,71 @@
+<!--
+- Author: Kaden FLick
+- Date: 02/01/2021
+- Description: Rudimentary page for the list of customers.
+-->
+
+<!DOCTYPE html>
+
+<html land="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Flavor Funtown</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="site-title">Order Viewer</h1>
+
+      <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="fruits.html">Fruits</a></li>
+        <li><a href="cart.html">Cart</a></li>
+				<li><a href="orders_viewer.html">Order List</a></li>
+				<li><a href="customers.html">Customer List</a></li>
+				<li><a href="add_things.html">Add</a></li>
+      </ul>
+
+      <div class="warning">
+        <p>Please note that this site is a work in progress. This HTML is preliminary and all data presented is hardcoded.</p>
+      </div>
+    </header>
+
+		<div class="customer-search">
+			<fieldset>
+				<legend>Order Search</legend>
+
+				<label for="order-number">Order Number</label>
+				<input type="text" name="order-number" placeholder="12345">
+				<label for="first-name">First Name</label>
+				<input type="text" name="first-name" placeholder="First Name">
+				<label for="last-name">Last Name</label>
+				<input type="text" name="last-name" placeholder="Last Name">
+				<label for="phone-number">Phone Number</label>
+				<input type="text" name="phone-number" placeholder="123-456-7890">
+
+				<input type="submit" value="Search">
+				<input type="reset">
+			</fieldset>
+		</div>
+
+		<div class="order-card-group">
+			<div class="order-card">
+				<h3>Customer Information</h3>
+				<p>Order Number: 12345</p>
+				<p>First Name: Me</p>
+				<p>Last Name: First</p>
+				<p>Phone Number: 123-456-7890</p>
+
+				<h3>Order Contents</h3>
+				<p>Fruit Name:Apple</p>
+				<p>Quantity: 3</p>
+				<p>Price: $1.00</p>
+				<p>Fruit Name: Orange</p>
+				<p>Quantity: 5</p>
+				<p>Price: $1.50</p>
+				<p>Order Total: $10.50</p>
+			</div>
+		</div>
+  </body>
+
+</html>

@@ -1,0 +1,86 @@
+<!--
+- Author: Kaden FLick
+- Date: 02/01/2021
+- Description: Rudimentary page to add things. Displays fruit information for the user.
+-->
+
+<!DOCTYPE html>
+
+<html land="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Flavor Funtown</title>
+  </head>
+
+  <body>
+    <header>
+			<header>
+	      <h1 class="site-title">Add Fruits, Flavors, and Tastes</h1>
+
+	      <ul>
+	        <li><a href="index.html">Homepage</a></li>
+	        <li><a href="fruits.html">Fruits</a></li>
+	        <li><a href="cart.html">Cart</a></li>
+					<li><a href="orders_viewer.html">Order List</a></li>
+					<li><a href="customers.html">Customer List</a></li>
+					<li><a href="add_things.html">Add</a></li>
+	      </ul>
+
+	      <div class="warning">
+	        <p>Please note that this site is a work in progress. This HTML is preliminary and all data presented is hardcoded.</p>
+	      </div>
+	    </header>
+
+			<div class="add-fruits">
+				<fieldset>
+					<legend>Add Fruit</legend>
+
+					<label for="fruit-name"> Enter Fruit Name</label>
+					<input type="text" name="fruit-name" placeholder="Apple">
+
+					<fieldset>
+	          <legend>Select Vitamins</legend>
+
+	          <input type="checkbox" name="vitamin" value="vitamin-c">
+	          <label for="vitamin-c">Vitamin-C</label>
+	          <input type="checkbox" name="vitamin" value="thaimine">
+	          <label for="thaimine">Thaimine</label>
+	          <input type="checkbox" name="vitamin" value="potassium">
+	          <label for="potassium">Potassium</label>
+	        </fieldset>
+
+	        <fieldset>
+	          <legend>Select Tastes</legend>
+
+	          <input type="checkbox" name="taste" value="sweet">
+	          <label for="sweet">Sweet</label>
+	          <input type="checkbox" name="taste" value="crisp">
+	          <label for="crisp">Crisp</label>
+	          <input type="checkbox" name="taste" value="juicy">
+	          <label for="juicy">Juicy</label>
+	        </fieldset>
+
+	        <input type="submit" value="Add">
+				</fieldset>
+
+				<fieldset>
+					<legend>Add Vitamins</legend>
+
+					<label for="vitamin-name">Enter Vitamin Name</label>
+					<input type="text" name="vitamin-name" placeholder="Vitamin-C">
+
+					<input type="submit" value="Add">
+				</fieldset>
+
+				<fieldset>
+					<legend>Add Tastes</legend>
+
+					<label for="taste-name">Enter Vitamin Name</label>
+					<input type="text" name="taste-name" placeholder="Sweet">
+
+					<input type="submit" value="Add">
+				</fieldset>
+			</div>
+	  </body>
+
+	</html>
