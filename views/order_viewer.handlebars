@@ -1,57 +1,55 @@
-<body>
-  <header>
-    <h1 class="site-title">Order Viewer</h1>
+<header>
+  <h1 class="site-title">Order Viewer</h1>
 
-    {{> link_header}}
-  </header>
+  {{> link_header}}
+</header>
 
-  <div class="order-search">
-    <fieldset>
-      <legend>Order Search</legend>
+<div class="order-search">
+  <fieldset>
+    <legend>Order Search</legend>
 
-      <label for="order-number">Order Number</label>
-      <input type="text" name="order-number" placeholder="12345">
-      <label for="first-name">First Name</label>
-      <input type="text" name="first-name" placeholder="First Name">
-      <label for="last-name">Last Name</label>
-      <input type="text" name="last-name" placeholder="Last Name">
-      <label for="phone-number">Phone Number</label>
-      <input type="text" name="phone-number" placeholder="123-456-7890">
+    <label for="order-number">Order Number</label>
+    <input type="text" name="order-number" placeholder="12345">
+    <label for="first-name">First Name</label>
+    <input type="text" name="first-name" placeholder="First Name">
+    <label for="last-name">Last Name</label>
+    <input type="text" name="last-name" placeholder="Last Name">
+    <label for="phone-number">Phone Number</label>
+    <input type="text" name="phone-number" placeholder="123-456-7890">
 
-      <input type="submit" value="Search">
-      <input type="reset">
-    </fieldset>
-  </div>
+    <input type="submit" value="Search">
+    <input type="reset">
+  </fieldset>
+</div>
 
-  <div class="order-card-group">
-    {{#each}}
-      <div class="order-card">
-        <h3>Order Number: {{order_number}}</h3>
-        <h3>Customer Information</h3>
-        <p>First Name: {{first_name}}</p>
-        <p>Last Name: {{last_name}}</p>
-        <p>Phone Number: {{phone_number}}</p>
-        <p>Total: {{total}}</p>
+<div class="order-card-group">
+  {{#each}}
+    <div class="order-card">
+      <h3>Order Number: {{order_number}}</h3>
+      <h3>Customer Information</h3>
+      <p>First Name: {{first_name}}</p>
+      <p>Last Name: {{last_name}}</p>
+      <p>Phone Number: {{phone_number}}</p>
+      <p>Total: {{total}}</p>
 
-        <h3>Order Contents</h3>
-        <table>
-          <thead>
-            <th>Fruit Name</th>
-            <th>Quantity</th>
-            <th>Price</th>
-          </thead>
+      <h3>Order Contents</h3>
+      <table>
+        <thead>
+          <th>Fruit Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </thead>
 
-          <tbody>
-            {{#each cart_fruit}}
-              <tr>
-                <td>{{fruitName}}</td>
-                <td>{{quantity}}</td>
-                <td>${{price_dollars}}.{{price_cents}}</td>
-              </tr>
-            {{/each}}
-          </tbody>
-        </table>
-      </div>
-    {{/each}}
-  </div>
-</body>
+        <tbody>
+          {{#each cart_fruit}}
+            <tr>
+              <td>{{fruitName}}</td>
+              <td>{{quantity}}</td>
+              <td>${{price_dollars}}.{{price_cents}}</td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  {{/each}}
+</div>

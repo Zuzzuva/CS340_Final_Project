@@ -3,36 +3,34 @@
 - Description: Template for cart page.
 -->
 
-<body>
-  <header>
-    <h1 class="site-title">Cart</h1>
+<header>
+  <h1 class="site-title">Cart</h1>
 
-    {{> link_header}}
-  </header>
+  {{> link_header}}
+</header>
 
-  <div class="cart-fruit-contianer">
-    <table>
-      <thead>
-        <th>Fruit Name</th>
-        <th>Quantity</th>
-        <th>Price</th>
-      </thead>
+<div class="cart-fruit-contianer">
+  <table>
+    <thead>
+      <th>Fruit Name</th>
+      <th>Quantity</th>
+      <th>Price</th>
+    </thead>
 
-      <tbody>
-        {{#each cart_fruit}}
-          <tr>
-            <td>{{fruitName}}</td>
-            <td>{{quantity}}</td>
-            <td>${{price_dollars}}.{{price_cents}}</td>
-            <td><button>Delete</button></td>
-          </tr>
-        {{/each}}
-      </tbody>
-    </table>
-  </div>
+    <tbody>
+      {{#each cart_fruit}}
+        <tr>
+          <td>{{fruitName}}</td>
+          <td>{{quantity}}</td>
+          <td>${{price_dollars}}.{{price_cents}}</td>
+          <td><button>Delete</button></td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
 
-  <div class="total">
-    <h3>Total: ${{total_dollars}}.{{total_cents}}</h3>
-    <button type="button" name="checkout-button"><a href="order.html">Proceed to Checkout></a></button>
-  </div>
-</body>
+<div class="total">
+  <h3>Total: ${{total_dollars}}.{{total_cents}}</h3>
+  <button type="button" name="checkout-button"><a href="order.html">Proceed to Checkout></a></button>
+</div>
