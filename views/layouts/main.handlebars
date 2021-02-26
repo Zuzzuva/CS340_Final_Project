@@ -1,0 +1,27 @@
+<!--
+- Author: Kaden FLick
+- Date: 02/01/2021
+- Description: Rudimentary Landing page for the site.
+-->
+
+<!DOCTYPE html>
+
+<html land="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Flavor Funtown</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    {{#each jsscripts}}
+      <script src="/static/{{this}}"></script>
+    {{/each}}
+  </head>
+
+  <body>
+
+    {{{body}}}
+
+  </body>
+
+</html>
