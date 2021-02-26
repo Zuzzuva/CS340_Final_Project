@@ -1,0 +1,51 @@
+<!--
+- Author: Kaden FLick
+- Description: Displays fruit information for the user. Is also the site landing page.
+-->
+
+<body>
+  <header>
+    <h1 class="site-title">Flavor Funtown</h1>
+
+    {{> link_header}}
+  </header>
+
+  <div class="fruit-search-container">
+    <form class="fruit-search-form">
+      <label for="fruit-name-search">Fruit Name</label>
+      <input type="text" name="fruit-name-search" placeholder="Apple">
+
+      {{> vitamins_checkbox}}
+
+      {{> tastes_checkbox}}
+
+      <input type="submit" value="Search">
+      <input type="reset">
+    </form>
+  </div>
+
+  <div class="fruit-card-container">
+    {{#each fruit_cards}}
+      <div class="fruit-card">
+        <h2>{{fruit_name}}</h2>
+        <p>Tastes:</p>
+        {{#each tasteList}}
+          <li>{{this}}</li>
+        {{/each}}
+
+        <p>Vitamins:</p>
+        {{#each vitaminList}}
+          <li>{{this}}</li>
+        {{/each}}
+
+        <p>Price: {{price}}</p>
+
+        <form class="cart-form">
+          <label for="quantity-step">Quantity</label>
+          <input type="number" name="quantity-step" value="1" step="1" min="1">
+          <input type="submit" value="Add To Cart">
+        </form>
+      </div>
+    {{/each}}
+  </div>
+</body>

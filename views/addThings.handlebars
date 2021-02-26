@@ -1,0 +1,46 @@
+<!--
+- Author: Kaden FLick
+- Description: Page to add various things to the databases.
+-->
+
+<body>
+  <header>
+    <header>
+      <h1 class="site-title">Add Fruits, Flavors, and Tastes</h1>
+
+      {{> link_header}}
+    </header>
+
+    <div class="add-fruits">
+      <fieldset>
+        <legend>Add Fruit</legend>
+
+        <label for="fruit-name"> Enter Fruit Name</label>
+        <input type="text" name="fruit-name" placeholder="Apple">
+
+        {{> vitamins_checkbox}}
+
+        {{> tastes_checkbox}}
+
+        <input type="submit" value="Add">
+      </fieldset>
+
+      <fieldset>
+        <legend>Add Vitamins</legend>
+
+        <label for="vitamin-name">Enter Vitamin Name</label>
+        <input type="text" name="vitamin-name" placeholder="Vitamin-C">
+
+        <input type="submit" value="Add">
+      </fieldset>
+
+      <fieldset>
+        <legend>Add Tastes</legend>
+
+        <label for="taste-name">Enter Vitamin Name</label>
+        <input type="text" name="taste-name" placeholder="Sweet">
+
+        <input type="submit" value="Add">
+      </fieldset>
+    </div>
+  </body>
